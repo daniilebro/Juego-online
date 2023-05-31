@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Monoton&display=swap');
+
+body {
+    background-color: #705772;
+}
+
+#seleccionar-mascota {
+    font-family: 'Delicious Handrawn', cursive;
+    display: flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo {
+    font-family: 'Monoton', cursive;
+    color: #A9EEC2;
+    font-size: 140px;
+    margin: 0px 30px 0px 30px;
+    
+}
+
+.subtitulo{
+    font-family: 'Delicious Handrawn', cursive;
+    color: #B9F9FF;
+    font-size: 40px;    
+}
+
+.tarjetas, .tarjetas-ataques {
+    display: flex;
+    gap:10px;
+    font-size: 30px;
+}
+
+.tarjeta-de-mokepon {
+    width: 220px;
+    height: 100px;
+    background: #FFD5E5;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px 50px 10px 50px;
+    border-radius: 36px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color:#705772    
+}
+
+.tarjeta-de-mokepon img{
+    width: 80px;
+}
+
+#boton-mascota{
+    font-family: 'Monoton', cursive;
+    font-size: 24px;
+    width: 240px;
+    height: 50px;
+    border-radius: 36px;
+    background: #B9F9FF;
+    border:3px solid #F38181;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 30px;
+}
+
+
+input {
+    display: none
+}
+
+.tituloAtaque {
+    font-family: 'Monoton', cursive;
+    color: #A9EEC2;
+    font-size: 40px;
+    margin: 0px 30px 0px 30px; 
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    background: #A9EEC2;
+}
+
+#seleccionar-ataque{
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Delicious Handrawn', cursive;
+}
+
+.boton-de-ataque {
+    font-family: 'Monoton', cursive;
+    font-size: 24px;
+    width: 100px;
+    height: 50px;
+    border-radius: 36px;
+    background: #B9F9FF;
+    border:3px solid #F38181;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-top: 30px;
+}
+
+#mensajes {
+    font-family: 'Monoton', cursive;
+    font-size: 24px;
+    width: 380px;
+    padding: 30px;
+    border-radius: 10px;
+    background: #FAD284;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    margin-top: 20px;
+}
+
+#boton-reiniciar{
+    border: transparent;
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 24px;
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    background: #FAD284;
+}
+
+.ataques {
+    display: grid;
+    grid-template-columns: 100px 100px;
+    font-size: 24px;
+    justify-content: center;
+    justify-items: center;
+    color: white;
+}
+
+.ataques-jugador, .ataques-enemigo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#ver-mapa{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#ver-mapa button{
+    font-family: 'Delicious Handrawn', cursive;
+    font-size: 18px;
+    width: 80px;
+    height: 30px;
+    border-radius: 16px;
+    background: #B9F9FF;
+    border:1px solid #F38181;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin: 10px 0;
+}
+
+@media (max-width: 560px) {
+    .tarjetas,.tarjetas-ataques {
+        flex-direction: column;
+        font-size: 30px; 
+    }
+
+    .titulo {
+        font-size: 40px;        
+    }
+    
+    .tarjeta-de-mokepon {
+        width: 220px;
+        height: 60px;
+    }
+
+    .tarjeta-de-mokepon img{
+        width: 50px;
+    }
+}
+
+@media (max-width: 300px){
+    #ver-mapa {
+        display:flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
