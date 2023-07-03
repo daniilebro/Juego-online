@@ -1,4 +1,6 @@
 /node_modules
+/package-lock.json
+/package.json
 packages/server-renderer/basic.js
 packages/server-renderer/build.dev.js
 packages/server-renderer/build.prod.js
